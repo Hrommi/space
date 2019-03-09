@@ -167,8 +167,20 @@ body {
                     radial-gradient(circle at 10% 96%, #412eb0, transparent 45px),
                     radial-gradient(circle at 4% 96%, #412eb0, transparent 45px);
   box-shadow: inset 0 16px 38px rgba(#4725de, 0.2), inset -100px 0px 100px rgba(#442fb4, 0.1);
-  transform: rotate(-15deg);
   clip-path: url(#snake);
+  animation: snake 6s ease-in-out infinite;
+}
+
+@keyframes snake {
+  from {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(-15deg);
+  }
 }
 
 .land {
