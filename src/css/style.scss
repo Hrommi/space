@@ -415,109 +415,190 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  
+  &__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: snow 3s ease-in-out infinite;
+    
+    &--2 {
+      animation-delay: 1s;
+    }
+    
+    &--3 {
+      animation-delay: 2s;
+    }
+  }
+}
+
+@keyframes snow {
+  from {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px)
+  }
+  to {
+    transform: translateX(-2px)
+  }
 }
 
 .snowflake {
   position: absolute;
+  top: 0;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #ffffff;
-  transform: translate(-50%, -50%);
+  margin: -3px;
+  animation: snowflake 15s linear infinite;
   
   &--small {
     width: 2px;
     height: 2px;
+    margin: -2px;
   }
 
   &--1 {
     left: 24px;
-    top: 195px;
+    animation-delay: -8.5s;
   }
 
   &--2 {
     left: 40px;
-    top: 140px;
+    animation-delay: -6s;
   }
 
   &--3 {
     left: 76px;
-    top: 102px;
+    animation-delay: -4s;
   }
 
   &--4 {
     left: 74px;
-    top: 236px;
+    animation-delay: -10s;
   }
 
   &--5 {
     left: 114px;
-    top: 174px;
+    animation-delay: -7.5s;
   }
 
   &--6 {
     left: 132px;
-    top: 88px;
+    animation-delay: -3.5s;
   }
 
   &--7 {
     left: 144px;
-    top: 158px;
+    animation-delay: -6.5s;
   }
 
   &--8 {
     left: 144px;
-    top: 218px;
+    animation-delay: -9.5s;
   }
 
   &--9 {
     left: 160px;
-    top: 48px;
+    animation-delay: -2s;
   }
 
   &--10 {
     left: 158px;
-    top: 120px;
+    animation-delay: -5s;
   }
 
   &--11 {
     left: 166px;
-    top: 310px;
+    animation-delay: -13s;
   }
 
   &--12 {
     left: 214px;
-    top: 142px;
+    animation-delay: -6s;
   }
 
   &--13 {
     left: 224px;
-    top: 82px;
+    animation-delay: -4s;
   }
 
   &--14 {
     left: 244px;
-    top: 218px;
+    animation-delay: -9.5s;
   }
 
   &--15 {
     left: 262px;
-    top: 176px;
+    animation-delay: -7.5s;
   }
 
   &--16 {
     left: 282px;
-    top: 98px;
+    animation-delay: -4.5s;
   }
 
   &--17 {
     left: 306px;
-    top: 146px;
+    animation-delay: -6.5s;
   }
 
   &--18 {
     left: 324px;
-    top: 212px;
+    animation-delay: -10s;
+  }
+
+  &--19 {
+    left: 36px;
+    animation-delay: -1.5s;
+  }
+
+  &--20 {
+    left: 64px;
+    animation-delay: -12.5s;
+  }
+
+  &--21 {
+    left: 108px;
+    animation-delay: -0.5s;
+  }
+
+  &--22 {
+    left: 120px;
+    animation-delay: -11s;
+  }
+
+  &--23 {
+    left: 212px;
+    animation-delay: -1s;
+  }
+
+  &--24 {
+    left: 238px;
+    animation-delay: -14s;
+  }
+
+  &--25 {
+    left: 278px;
+    animation-delay: -11.5s;
+  }
+
+  &--26 {
+    left: 296px;
+    animation-delay: -1.5s;
+  }
+}
+
+@keyframes snowflake {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(352px);
   }
 }
 
